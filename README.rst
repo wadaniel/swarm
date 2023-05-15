@@ -18,7 +18,7 @@ To generate synthetic demonstration data run
 
 .. code-block:: bash
 
-    python generatrTrajectories.py
+    python generateTrajectories.py
 
 IMARL
 ---------------------------
@@ -29,8 +29,9 @@ To run IRL with synthetic data run
 
     python run-vracer-irl.py
 
+Launch scripts for the hyperparameter search of IMARL can be found in ``_jobs``.
 
-Use the following files for post-processing of the results:
+Use the following files for post-processing of the outputs:
 
 .. code-block:: bash
 
