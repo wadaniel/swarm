@@ -1,0 +1,9 @@
+_figures/
+_trajectories/
+_korali_result*
+_result*
+*.err
+*.out
+*.png
+__pycache__
+.DS_Store
