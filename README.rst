@@ -5,8 +5,9 @@ Hyperparameter optimization
 ---------------------------
 To optimize the hyperparameter (radii zone of repulsion, zone of alignment, zone of atttraction) with CMA-ES run
 
-.. code-block:: bash
+```bash
     python run-cmaes.py
+```
 
 Synthetic Data
 ---------------------------
