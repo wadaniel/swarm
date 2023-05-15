@@ -5,9 +5,9 @@ Hyperparameter optimization
 ---------------------------
 To optimize the hyperparameter (radii zone of repulsion, zone of alignment, zone of atttraction) with CMA-ES run
 
-```bash
+.. code-block:: bash
+    
     python run-cmaes.py
-```
 
 Synthetic Data
 ---------------------------
@@ -15,6 +15,7 @@ Synthetic Data
 To generate synthetic demonstration data run 
 
 .. code-block:: bash
+
     python generatrTrajectories.py
 
 IMARL
@@ -23,19 +24,22 @@ IMARL
 To run IRL with synthetic data run
 
 .. code-block:: bash
+
     python run-vracer-irl.py
 
 
 Use the following files for post-processing of the results:
 
-evaluateValue.py
+.. code-block:: bash
 
-evaluateReward.py
+    evaluateValue.py
 
-plotReward.py
+    evaluateReward.py
 
-plotTrajectory.py
+    plotReward.py
 
-makegif.py
+    plotTrajectory.py
+
+    makegif.py
 
 
