@@ -7,7 +7,7 @@ export DIM=3
 export N=25
 export NN=7
 export NT=1000
-export DAT=100
+export DAT=50
 
 for EU in 1000 5000 10000 15000
 do
