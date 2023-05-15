@@ -1,18 +1,28 @@
 Multi-Agent Inverse Reinforcement Learning on a Particle Swarm
 ===============================================================
 
+Hyperparameter optimization
+---------------------------
+To optimize the hyperparameter (radii zone of repulsion, zone of alignment, zone of atttraction) with CMA-ES run
 
-To optimize the hyperparameter (radii zone of repulsion, zone of alignment, zone of atttraction) run
+.. code-block:: sh
+    python run-cmaes.py
 
-run-cmaes.py
+Synthetic Data
+---------------------------
 
 To generate synthetic demonstration data run 
 
-generatrTrajectories.py
+.. code-block:: sh
+    python generatrTrajectories.py
+
+IMARL
+---------------------------
 
 To run IRL with synthetic data run
 
-run-vracer-irl.py
+.. code-block:: sh
+    python run-vracer-irl.py
 
 Use the following files for post-processing of the results
 
