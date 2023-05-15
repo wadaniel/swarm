@@ -1,6 +1,8 @@
 Multi-Agent Inverse Reinforcement Learning on a Particle Swarm
 ===============================================================
 
+Note: In order to run CMA-ES and IMARL an installation of ``korali`` is required.
+
 Hyperparameter optimization
 ---------------------------
 To optimize the hyperparameter (radii zone of repulsion, zone of alignment, zone of atttraction) with CMA-ES run
