@@ -11,11 +11,10 @@ import numpy as np
 if __name__ == '__main__':
     parser = argparse.ArgumentParser()
 
-    parser.add_argument('--N', help='number of fish', required=False, type=int, default=10)
+    parser.add_argument('--N', help='number of fish', required=False, type=int, default=25)
     parser.add_argument('--NT', help='number of timesteps to simulate', required=False, type=int, default=1000)
-    parser.add_argument('--NN', help='number of nearest neighbours used for state/reward', required=False, type=int, default=3)
-    parser.add_argument('--D', help='number of dimensions of the simulation', required=False, type=int, default=2)
-    parser.add_argument('--initialization', help='how the fishes should be initialized. 0 for grid, 1 for on circle or sphere, 2 for within a circle or a sphere', required=False, type=int, default=1)
+    parser.add_argument('--NN', help='number of nearest neighbours used for state/reward', required=False, type=int, default=7)
+    parser.add_argument('--D', help='number of dimensions of the simulation', required=False, type=int, default=3)
     parser.add_argument('--psi', help='gives the initial polarization of the fish', required=False, type=float, default=-1.)
     parser.add_argument('--seed', help='random seed', required=False, type=int, default=1)
     parser.add_argument('--num', help='number of trajectories to produce', required=False, type=int, default=1)
@@ -27,7 +26,6 @@ if __name__ == '__main__':
     numTimeSteps         = args["NT"]
     numNearestNeighbours = args["NN"]
     numdimensions        = args["D"]
-    initializationType   = args["initialization"]
     psi                  = args["psi"]
     seed                 = args["seed"]
     numTrajectories      = args["num"]
@@ -67,7 +65,7 @@ if __name__ == '__main__':
     count = len(obsstates)
 
     while count < numTrajectories:
-        sim  = swarm( numIndividuals, numNearestNeighbours,  numdimensions, 2, initializationType, _psi=psi, seed=seed+count )
+        sim  = swarm( numIndividuals, numNearestNeighbours,  numdimensions, 2, 1, _psi=psi, seed=seed+count )
         action = np.zeros(shape=(sim.dim), dtype=float)
        
         states = []
