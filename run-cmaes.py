@@ -45,8 +45,8 @@ e["Variables"][3]["Lower Bound"] = 3.49 # 200 degrees
 e["Variables"][3]["Upper Bound"] = 6.28 # 360 degrees
 
 e["Solver"]["Type"] = "Optimizer/CMAES"
-e["Solver"]["Population Size"] = 64
-e["Solver"]["Mu Value"] = 16
+e["Solver"]["Population Size"] = 32
+e["Solver"]["Mu Value"] = 8
 e["Solver"]["Termination Criteria"]["Min Value Difference Threshold"] = 1e-12
 e["Solver"]["Termination Criteria"]["Max Generations"] = 500
 
@@ -59,6 +59,6 @@ e["File Output"]["Frequency"] = 1
 e["Console Output"]["Verbosity"] = "Detailed"
 
 k["Conduit"]["Type"] = "Concurrent"
-k["Conduit"]["Concurrent Jobs"] = 16
+k["Conduit"]["Concurrent Jobs"] = 4
 
 k.run(e)
