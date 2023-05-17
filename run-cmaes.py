@@ -9,7 +9,7 @@ from objectivefunction import objectivefunction
 parser = argparse.ArgumentParser()
 parser.add_argument('--N', help='Num Fish', type=int, default=100, required=False)
 parser.add_argument('--dim', help='Dimensions', type=int, default=2, required=False)
-parser.add_argument('--obj', help='Choose objective (0: milling, 1: schooling, 2: swarming"', type=int, default=0, required=False)
+parser.add_argument('--obj', help='Choose objective (0: milling, 1: schooling, 2: swarming)', type=int, default=0, required=False)
 parser.add_argument('--run', help='Run tag', type=int, default=0, required=False)
 
 args = vars(parser.parse_args())

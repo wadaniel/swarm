@@ -14,10 +14,9 @@ parser.add_argument('--N', help='Swarm size.', required=False, type=int, default
 parser.add_argument('--NT', help='Number of steps', required=False, type=int, default=1000)
 parser.add_argument('--NN', help='Number of nearest neighbours', required=False, type=int, default=7)
 parser.add_argument('--NL', help='Number of nodes in hidden layer', required=False, type=int, default=128)
-parser.add_argument('--reward', help='Reward type (local / global)', required=False, type=str, default="global")
-parser.add_argument('--exp', help='Number of experiences.', required=False, type=int, default=1000000)
+parser.add_argument('--exp', help='Number of experiences.', required=False, type=int, default=5000000)
 parser.add_argument('--dim', help='Dimensions.', required=False, type=int, default=3)
-parser.add_argument('--dat', help='Number of observed trajectories used.', type=int, required=False, default=-1)
+parser.add_argument('--dat', help='Number of observed trajectories used.', type=int, required=False, default=50)
 parser.add_argument('--run', help='Run tag.', required=False, type=int, default=0)
 
 # IRL params
@@ -54,7 +53,6 @@ maxAngle=swarm.maxAngle
 
 
 # Load data
-#fname = f'_trajectories/observations_simple_{numIndividuals}_{numNearestNeighbours}_{dim}d.json'
 fname = f'_trajectories/observations_extended_{numIndividuals}_{numNearestNeighbours}_{ndata}_{dim}d.json'
 obsstates = []
 obsactions = []

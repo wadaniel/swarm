@@ -32,7 +32,7 @@ To generate 50 trajectories of a swarm with 25 fish with 7 nearest neighbours an
 IMARL
 ---------------------------
 
-To run IRL with synthetic data run
+To run IRL with synthetic data run (with the defaults reported in NIPS submission)
 
 .. code-block:: bash
 
