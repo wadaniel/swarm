@@ -32,11 +32,13 @@ To generate 50 trajectories of a swarm with 25 fish with 7 nearest neighbours an
 IMARL
 ---------------------------
 
-To run IRL with synthetic data run (with the defaults reported in NIPS submission)
+To run IRL with synthetic data (with the defaults reported in NIPS submission)
 
 .. code-block:: bash
 
     python run-vracer-irl.py
+
+Make sure that the synthetic data is available prior to running the IRL script.
 
 Launch scripts for the hyperparameter search of IMARL can be found in ``_jobs``.
 
